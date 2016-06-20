@@ -239,5 +239,11 @@ class Homestead
         ]
       end
     end
+
+    # MongoDB
+    config.vm.provision "shell" do |s|
+        s.path = scriptDir + "/install-mongodb.sh"
+    end
+
   end
 end
