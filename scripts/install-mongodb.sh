@@ -8,6 +8,8 @@ apt-get update
 
 apt-get install -y mongodb-org
 
+sed -i "s/bindIp:/#&/g" /etc/mongod.conf
+
 service mongod start
 
 apt-get install -y php7-mongodb
