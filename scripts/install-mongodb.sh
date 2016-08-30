@@ -12,6 +12,6 @@ sed -i "s/bindIp:/#&/g" /etc/mongod.conf
 
 service mongod start
 
-apt-get install -y php7-mongodb
+apt-get install -y php7.0-mongodb
 
-service php7-fpm restart
+service php7.0-fpm restart
